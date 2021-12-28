@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["index.ts"],"names":[],"mappings":";;;;;AAAA,0DAAkC;AAElC,MAAM,CAAC,cAAc,CAAC,MAAM,CAAC,WAAW,EAAE,kBAAQ,CAAC,CAAC","sourcesContent":["import ListItem from \"./ListItem\";\n\nwindow.customElements.define(\"list-item\", ListItem);"]}

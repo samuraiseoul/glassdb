@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="./dist/glassdb.min.js"></script>
+        <style>
+            list-item {
+                min-width: 10%;
+                float: left;
+            }
+
+            .listing {
+                float: left;
+            }
+
+            glass-item {
+                float: left;
+            }
+
+            item-manufacturer {
+                float: left;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                document.querySelector('item-manufacturer').dataset.id = (new URLSearchParams(window.location.search)).get('id');
+            });
+        </script>
+    </head>
+    <body>
+        <main>
+            <item-manufacturer></item-manufacturer>
+        </main>
+    </body>
+</html>
